@@ -1,3 +1,5 @@
+/* Implementation of finding a left factoring */
+
 #include<stdio.h>  
 #include<string.h> 
 #include<stdlib.h>
@@ -41,3 +43,17 @@
        printf("\n A->%s",modifiedGram);  
        printf("\n X->%s\n",newGram);  
   }  
+
+/*
+Test Case 1:
+Enter Production : A->aAb|aAc
+
+ A->aAX
+ X->b|c
+ 
+ Test Case 2:
+ Enter Production : A->aabc|ab
+
+ A->aX
+ X->abc|b
+*/
