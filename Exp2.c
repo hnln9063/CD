@@ -1,3 +1,5 @@
+/* Implementation of elimination of left recursion */
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -83,3 +85,15 @@ void main()
 		ELS(s);
 	}
 }
+/*
+Test Case :
+Enter no of productions : 2
+Ener the Production in the form(A->A@|B) : A->Aa|b
+The Production is : A->Aa|b
+After elemination of left recursion
+A->bA'
+A'->aA'|E
+Ener the Production in the form(A->A@|B) : A->ab|c
+The Production is : A->ab|c
+Given production A->ab|c is not in left recursion
+*/
